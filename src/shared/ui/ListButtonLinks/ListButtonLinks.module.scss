@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.ListButtonLinks {
+  display: flex;
+  justify-content: space-between;
+  @include media-laptop {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}

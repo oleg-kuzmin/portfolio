@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.AboutSelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1216px;
+  padding: 40px 0;
+  scroll-margin-top: 72px;
+  @include max-width;
+  @include content;
+  @include media-laptop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+    scroll-margin-top: 0;
+  }
+  @include media-desktop {
+    padding: 80px 0;
+  }
+
+  &__SectionTitle {
+    padding: 39px 0 20px;
+    @include media-mobile-375 {
+      padding-top: 40px;
+    }
+    @include media-laptop {
+      padding-top: 2px;
+    }
+    @include media-desktop {
+      padding-bottom: 30px;
+    }
+  }
+}

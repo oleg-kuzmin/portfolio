@@ -1,0 +1,1 @@
+export { AboutSelfImage } from './AboutSelfImage';

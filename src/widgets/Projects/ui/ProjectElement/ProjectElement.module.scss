@@ -1,0 +1,77 @@
+@use '@/shared/mixins' as *;
+
+.ProjectElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include media-laptop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 19px;
+  }
+  @include media-desktop {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  &__Image {
+    max-width: 343px;
+    object-fit: cover;
+    border-radius: 20px;
+    vertical-align: top;
+    @include effect-shadow-yellow;
+    @include media-desktop {
+      max-width: 580px;
+    }
+  }
+
+  &__Description {
+    width: 100%;
+    max-width: 580px;
+    padding: 19px 9px;
+    border: 1px solid var(--border-gray);
+    border-radius: 20px;
+    background-color: var(--dark-bg);
+    @include media-tablet {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+  }
+
+  &__Title {
+    padding-bottom: 20px;
+    overflow: hidden;
+    color: var(--white);
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include font-extrabold(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-extrabold(28px, 32px, -0.02em);
+    }
+    @include media-tablet {
+      text-align: left;
+    }
+    @include media-desktop {
+      @include font-extrabold(38px, 48px, -0.02em);
+    }
+  }
+
+  &__Buttons {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 20px;
+    @include media-mobile-425 {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include media-tablet {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+}

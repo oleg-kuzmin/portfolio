@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.SectionTitle {
+  text-align: center;
+  user-select: none;
+  scroll-margin-top: 60px;
+
+  &__Regular {
+    padding-right: 10px;
+    @include font-regular(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-regular(28px, 32px, -0.02em);
+    }
+    @include media-laptop {
+      @include font-regular(38px, 56px, -0.02em);
+    }
+    @include media-desktop {
+      padding-right: 14px;
+      @include font-regular(48px, 56px, -0.02em);
+    }
+  }
+
+  &__ExtraBold {
+    @include font-extrabold(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-extrabold(28px, 32px, -0.02em);
+    }
+    @include media-laptop {
+      @include font-extrabold(38px, 56px, -0.02em);
+    }
+    @include media-desktop {
+      @include font-extrabold(48px, 56px, -0.02em);
+    }
+  }
+}

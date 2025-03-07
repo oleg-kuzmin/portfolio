@@ -1,0 +1,18 @@
+@use '@/shared/mixins' as *;
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+
+  &__Image {
+    object-fit: contain;
+    border-radius: 10px;
+    @include effect-shadow-dark;
+  }
+
+  &__Text {
+    @include font-bold(20px, 24px, -0.02em);
+  }
+}

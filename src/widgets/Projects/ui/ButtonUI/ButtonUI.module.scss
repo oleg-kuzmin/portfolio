@@ -1,0 +1,27 @@
+@use '@/shared/mixins' as *;
+
+.ButtonUI {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background-position: center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: var(--ui-bg);
+  @include effect-shadow-dark;
+  @include effect-focus-radius-6;
+  @include effect-hover-ui;
+
+  &_Right {
+    background-image: url('/svg/ui-icon-arrow-white.svg');
+  }
+
+  &_Left {
+    rotate: 180deg;
+    background-image: url('/svg/ui-icon-arrow-white.svg');
+  }
+
+  &_Close {
+    background-image: url('/svg/ui-icon-close-white.svg');
+  }
+}

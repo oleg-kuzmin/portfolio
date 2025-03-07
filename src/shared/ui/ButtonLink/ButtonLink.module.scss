@@ -1,0 +1,84 @@
+@use '@/shared/mixins' as *;
+
+.ButtonLink {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  user-select: none;
+  cursor: pointer;
+  @include effect-shadow-dark;
+  @include effect-focus-radius-6;
+  @include effect-hover-button-link;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    transition: opacity var(--time-hover-ui);
+  }
+
+  &::before {
+    opacity: 1;
+  }
+  &::after {
+    opacity: 0;
+  }
+
+  &_Email {
+    &::before {
+      background-image: url('/svg/ui-icon-email-black.svg');
+    }
+    &::after {
+      background-image: url('/svg/ui-icon-email-white.svg');
+    }
+  }
+
+  &_Git {
+    &::before {
+      background-image: url('/svg/ui-icon-git-black.svg');
+    }
+    &::after {
+      background-image: url('/svg/ui-icon-git-white.svg');
+    }
+  }
+
+  &_Phone {
+    &::before {
+      background-image: url('/svg/ui-icon-phone-black.svg');
+    }
+    &::after {
+      background-image: url('/svg/ui-icon-phone-white.svg');
+    }
+  }
+
+  &_Telegram {
+    &::before {
+      background-image: url('/svg/ui-icon-telegram-black.svg');
+    }
+    &::after {
+      background-image: url('/svg/ui-icon-telegram-white.svg');
+    }
+  }
+
+  &_Up {
+    &::before {
+      background-image: url('/svg/ui-icon-up-black.svg');
+    }
+    &::after {
+      background-image: url('/svg/ui-icon-up-white.svg');
+    }
+  }
+}

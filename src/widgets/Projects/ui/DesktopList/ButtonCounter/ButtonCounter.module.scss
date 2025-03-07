@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.ButtonCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  padding: 4px 30px;
+  border: 1px solid var(--border-gray);
+  border-radius: 20px;
+  background-color: var(--dark-bg);
+  color: var(--gray);
+  user-select: none;
+  @include font-extrabold(16px, 24px, -0.02em);
+  @include effect-hover-ui;
+  @include effect-focus-radius-20;
+}

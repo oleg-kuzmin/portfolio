@@ -1,0 +1,33 @@
+@use '@/shared/mixins' as *;
+
+.DesktopList {
+  position: relative;
+  width: 100%;
+  scroll-margin-top: 60px;
+
+  &__SwiperButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  &__DecorateBgLeft,
+  &__DecorateBgRight {
+    z-index: 2;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    box-shadow:
+      2px 2px 8px #000000,
+      -2px -2px 8px #000000;
+  }
+
+  &__DecorateBgLeft {
+    left: -5px;
+  }
+  &__DecorateBgRight {
+    right: -5px;
+  }
+}

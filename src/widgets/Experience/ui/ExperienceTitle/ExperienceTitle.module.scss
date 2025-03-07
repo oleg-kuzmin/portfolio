@@ -1,0 +1,53 @@
+@use '@/shared/mixins' as *;
+
+.ExperienceTitle {
+  display: flex;
+  flex-direction: column;
+  padding: 0 19px 20px;
+  gap: 20px;
+ 
+  @include media-laptop {
+    padding-right: 29px;
+    padding-left: 29px;
+  }
+  @include media-desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  &__Text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--white);
+    @include font-semibold(16px, 24px, -0.02em);
+    @include media-desktop {
+      @include font-semibold(24px, 28px, -0.02em);
+    }
+    &::before {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+    }
+    &_Yandex {
+      &::before {
+        background-image: url('/svg/exp-icon-yandex.svg');
+      }
+    }
+    &_V6 {
+      &::before {
+        background-image: url('/svg/exp-icon-v6.svg');
+      }
+    }
+  }
+
+  &__Date {
+    color: var(--gray);
+    @include font-regular(16px, 20px, 0.02em);
+  }
+}

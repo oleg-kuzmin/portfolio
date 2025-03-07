@@ -1,0 +1,39 @@
+@use '@/shared/mixins' as *;
+
+.PreviewsList {
+  position: relative;
+
+  &__Content {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(4, 200px);
+    width: max-content;
+    max-height: 640px;
+    padding: 40px;
+    overflow-y: auto;
+    gap: 30px;
+    border-radius: 20px;
+    outline: 1px solid var(--border-dark-gray);
+    background-color: rgba($color: #27272a, $alpha: 0.4);
+    scrollbar-color: var(--ui-bg) var(--black);
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 20px;
+      background-color: var(--black);
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: var(--ui-bg);
+    }
+  }
+
+  &__ButtonClose {
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+}

@@ -1,0 +1,36 @@
+@use '@/shared/mixins' as *;
+
+.SkillElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  gap: 13px;
+  border-radius: 14px;
+  background-color: var(--white);
+  user-select: none;
+  @include effect-shadow-dark;
+  @include media-laptop {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__Icon {
+    width: auto;
+    height: 33px;
+    object-fit: contain;
+    @include media-laptop {
+      height: 56px;
+    }
+  }
+
+  &__Title {
+    text-transform: uppercase;
+    @include font-bold(12px, 12px, -0.02em);
+    @include media-laptop {
+      @include font-bold(20px, 24px, -0.02em);
+    }
+  }
+}

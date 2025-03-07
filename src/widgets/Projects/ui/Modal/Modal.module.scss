@@ -1,0 +1,24 @@
+@use '@/shared/mixins' as *;
+
+.Modal {
+  display: flex;
+  visibility: hidden;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition:
+    opacity var(--time-modal),
+    visibility var(--time-modal);
+
+  &_Active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

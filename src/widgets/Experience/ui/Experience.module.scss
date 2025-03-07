@@ -1,0 +1,31 @@
+@use '@/shared/mixins' as *;
+
+.Experience {
+  padding: 40px 0;
+  background-color: var(--black);
+  @include media-desktop {
+    padding: 80px 0;
+  }
+
+  &__Content {
+    @include max-width(1168px);
+    @include content;
+  }
+
+  &__SectionTitle {
+    padding-bottom: 40px;
+    color: var(--white);
+    @include media-desktop {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__List {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include media-desktop {
+      gap: 40px;
+    }
+  }
+}

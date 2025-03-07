@@ -1,0 +1,58 @@
+@use '@/shared/mixins' as *;
+
+.Hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  @include max-width;
+  @include content;
+  @include media-laptop {
+    align-items: flex-start;
+  }
+  @include media-desktop {
+    padding-top: 80px;
+  }
+
+  &__Image {
+    @include media-laptop {
+      position: absolute;
+      right: 0;
+      bottom: 16px;
+    }
+    @include media-desktop {
+      bottom: 13px;
+    }
+  }
+
+  &__Heading {
+    padding-top: 40px;
+    @include media-laptop {
+      padding-top: 20px;
+    }
+  }
+
+  &__Text {
+    padding-top: 30px;
+  }
+
+  &__ListButtonLinks {
+    width: 100%;
+    padding: 30px 7px 0;
+    @include media-mobile-375 {
+      justify-content: center;
+      width: auto;
+      padding-right: 0;
+      padding-left: 0;
+      gap: 24px;
+    }
+    @include media-laptop {
+      padding-top: 33px;
+    }
+    @include media-desktop {
+      padding-top: 76px;
+      padding-left: 62px;
+    }
+  }
+}

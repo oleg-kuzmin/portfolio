@@ -1,0 +1,19 @@
+@use '@/shared/mixins' as *;
+
+.HeroText {
+  max-width: 480px;
+  padding: 0 7px;
+  
+  @include font-regular(16px, 24px, 0.02em);
+  @include media-mobile-425 {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  @include media-laptop {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include media-desktop {
+    max-width: 600px;
+  }
+}

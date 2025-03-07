@@ -1,0 +1,9 @@
+@use '@/shared/mixins' as *;
+
+.Contacts {
+  &__List {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

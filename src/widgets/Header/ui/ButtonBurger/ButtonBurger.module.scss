@@ -1,0 +1,44 @@
+@use '@/shared/mixins' as *;
+
+.ButtonBurger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  gap: 5px;
+  @include effect-focus-radius-6;
+
+  &__Line {
+    width: 26px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--black);
+    &:nth-child(1) {
+      transform-origin: top left;
+      transition:
+        transform 0.3s ease-out,
+        background-color 0.3s ease-out;
+    }
+    &:nth-child(3) {
+      transform-origin: bottom left;
+      transition:
+        transform 0.3s ease-out,
+        background-color 0.3s ease-out;
+    }
+    &_Active {
+      &:nth-child(1) {
+        transform: rotate(40deg);
+        background-color: var(--white);
+      }
+      &:nth-child(2) {
+        transform: scaleY(0);
+      }
+      &:nth-child(3) {
+        transform: rotate(-40deg);
+        background-color: var(--white);
+      }
+    }
+  }
+}

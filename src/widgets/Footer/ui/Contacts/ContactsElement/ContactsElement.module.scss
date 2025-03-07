@@ -1,0 +1,5 @@
+@use '@/shared/mixins' as *;
+
+.ContactsElement {
+  @include font-semibold(16px, 20px, -0.02em);
+}

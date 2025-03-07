@@ -1,0 +1,49 @@
+@use '@/shared/mixins' as *;
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 296px;
+  padding: 40px 0;
+  gap: 30px;
+  @include content;
+  @include media-laptop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    gap: 0;
+    @include max-width;
+  }
+  @include media-desktop {
+    justify-content: flex-start;
+  }
+
+  &__ButtonLinkUp {
+    @include media-laptop {
+      margin-right: 30px;
+    }
+    @include media-desktop {
+      margin-right: 70px;
+    }
+  }
+
+  &__Logo {
+    @include media-laptop {
+      margin-right: 45px;
+    }
+    @include media-desktop {
+      margin-right: 196px;
+    }
+  }
+
+  &__ListButtonLinks {
+    @include media-laptop {
+      margin-right: 111px;
+    }
+    @include media-desktop {
+      margin-right: auto;
+    }
+  }
+}

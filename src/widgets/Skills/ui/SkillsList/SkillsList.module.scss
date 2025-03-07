@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.SkillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  @include media-mobile-425 {
+    gap: 24px;
+  }
+  @include media-laptop {
+    gap: 40px;
+  }
+}

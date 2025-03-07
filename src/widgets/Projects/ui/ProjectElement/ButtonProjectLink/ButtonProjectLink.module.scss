@@ -1,0 +1,38 @@
+@use '@/shared/mixins' as *;
+
+.ButtonProjectLink {
+  display: flex;
+  width: max-content;
+  padding: 5px 15px;
+  gap: 10px;
+  transform: scaleZ(1);
+  border-radius: 6px;
+  background-color: var(--ui-bg);
+  color: var(--white);
+  user-select: none;
+  @include font-bold(20px, 24px, -0.02em);
+  @include effect-shadow-dark;
+  @include effect-focus-radius-6;
+  @include effect-hover-ui;
+
+  &::after {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  &_Arrow {
+    &::after {
+      background-image: url('/svg/ui-icon-arrow-white.svg');
+    }
+  }
+
+  &_Git {
+    &::after {
+      background-image: url('/svg/ui-icon-git-white.svg');
+    }
+  }
+}

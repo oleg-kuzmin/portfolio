@@ -1,0 +1,69 @@
+@use '@/shared/mixins' as *;
+
+.BurgerPanel {
+  user-select: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 24px 40px;
+  transform: translateY(-110%);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow:
+    2px 2px 8px var(--black),
+    -2px -2px 8px var(--black);
+  color: var(--white);
+  transition: transform var(--time-modal) ease-in-out;
+  @include font-regular(18px, 24px, 0.02em);
+  @include media-tablet {
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &_Active {
+    transform: translateY(0);
+  }
+
+  &__List {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include media-tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__Link {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    min-width: 125px;
+    gap: 10px;
+    cursor: default;
+    @include effect-focus-radius-6;
+    @include media-tablet {
+      min-width: revert;
+    }
+
+    &::after {
+      width: 24px;
+      height: 24px;
+      background-image: url('/svg/ui-icon-arrow-white.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+    }
+
+    &_Up {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

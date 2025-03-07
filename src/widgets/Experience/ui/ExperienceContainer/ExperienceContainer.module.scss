@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.ExperienceContainer {
+  padding: 29px 0;
+  border: 1px solid var(--border-gray);
+  border-radius: 20px;
+  background-color: var(--dark-bg);
+}

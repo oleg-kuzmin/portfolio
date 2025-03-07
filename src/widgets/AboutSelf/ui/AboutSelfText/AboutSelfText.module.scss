@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.AboutSelfText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media-desktop {
+    gap: 30px;
+  }
+
+  &__Paragraph {
+    @include font-regular(16px, 24px, 0.02em);
+  }
+}

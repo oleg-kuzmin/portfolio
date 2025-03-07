@@ -1,0 +1,9 @@
+@use '@/shared/mixins' as *;
+
+.AboutSelfImage {
+  max-width: 330px;
+  object-fit: contain;
+  @include media-desktop {
+    max-width: 450px;
+  }
+}

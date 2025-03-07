@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.NavigationElement {
+  user-select: none;
+  &__Link {    
+    color: var(--black);
+    @include font-semibold(24px, 24px, -0.02em);
+    @include effect-focus-radius-6;
+    @include effect-hover-navigation-link;
+  }
+}

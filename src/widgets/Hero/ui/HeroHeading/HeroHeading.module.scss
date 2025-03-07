@@ -1,0 +1,58 @@
+@use '@/shared/mixins' as *;
+
+.HeroHeading {
+  &__Title {
+    display: flex;
+    flex-direction: column;
+    min-width: max-content;
+    gap: 9px;
+    @include media-desktop {
+      gap: 20px;
+    }
+  }
+
+  &__Row {
+    display: flex;
+    gap: 9px;
+    @include media-desktop {
+      gap: 16px;
+    }
+  }
+
+  &__Regular {
+    @include font-regular(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-regular(28px, 32px, -0.02em);
+    }
+    @include media-desktop {
+      @include font-regular(48px, 56px, -0.02em);
+    }
+  }
+
+  &__ExtraBold {
+    @include font-extrabold(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-extrabold(28px, 32px, -0.02em);
+    }
+    @include media-desktop {
+      @include font-extrabold(48px, 56px, -0.02em);
+    }
+  }
+
+  &__Outside {
+    color: var(--main-bg);
+    text-shadow:
+      2px 2px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    @include font-extrabold(22px, 24px, -0.02em);
+    @include media-mobile-375 {
+      @include font-extrabold(28px, 32px, -0.02em);
+    }
+    @include media-desktop {
+      @include font-extrabold(48px, 56px, -0.02em);
+    }
+  }
+}

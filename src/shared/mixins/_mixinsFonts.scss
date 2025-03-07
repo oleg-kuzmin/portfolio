@@ -1,0 +1,31 @@
+@mixin font-extrabold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 800;
+  font-style: normal;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-bold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 700;
+  font-style: normal;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-semibold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 600;
+  font-style: normal;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-regular($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 400;
+  font-style: normal;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}

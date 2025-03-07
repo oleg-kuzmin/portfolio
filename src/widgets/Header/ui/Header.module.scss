@@ -1,0 +1,53 @@
+@use '@/shared/mixins' as *;
+
+.Header {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgba($color: #f4b770, $alpha: 0.8);
+  @include media-laptop {
+    position: relative;
+    background-color: revert;
+  }
+
+  &__Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+    @include max-width;
+    @include content;
+    @include media-laptop {
+      min-height: 120px;
+    }
+  }
+
+  &__ButtonBurger {
+    z-index: 2;
+    @include media-laptop {
+      display: none;
+    }
+  }
+
+  &__Navigation {
+    display: none;
+    @include media-laptop {
+      display: revert;
+    }
+  }
+
+  &__ButtonDownload {
+    display: none;
+    @include media-laptop {
+      display: flex;
+    }
+  }
+
+  &__BurgerPanel {
+    @include media-laptop {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use '@/shared/mixins' as *;
+
+.Skills {
+  max-width: 1216px;
+  padding: 40px 0;
+  scroll-margin-top: 72px;
+  @include max-width;
+  @include content;
+  @include media-laptop {
+    scroll-margin-top: -10px;
+  }
+  @include media-desktop {
+    padding: 80px 0;
+  }
+
+  &__List {
+    padding-top: 40px;
+    @include media-desktop {
+      padding-top: 80px;
+    }
+  }
+}

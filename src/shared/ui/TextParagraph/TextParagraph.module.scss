@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.TextParagraph {
+  display: flex;
+  gap: 5px;
+  color: var(--gray);
+  @include font-regular(16px, 24px, 0.02em);
+}

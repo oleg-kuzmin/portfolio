@@ -1,0 +1,1 @@
+export { AboutSelfDescription } from './AboutSelfDescription';

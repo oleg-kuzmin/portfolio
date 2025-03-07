@@ -1,0 +1,47 @@
+@mixin media-mobile-320 {
+  @media (width >= 320px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-375 {
+  @media (width >= 375px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-425 {
+  @media (width >= 425px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (width >= 768px) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (width >= 1024px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (width >= 1440px) {
+    @content;
+  }
+}
+
+@mixin media-fullHD {
+  @media (width >= 1920px) {
+    @content;
+  }
+}
+
+@mixin media-2K {
+  @media (width >= 2560px) {
+    @content;
+  }
+}

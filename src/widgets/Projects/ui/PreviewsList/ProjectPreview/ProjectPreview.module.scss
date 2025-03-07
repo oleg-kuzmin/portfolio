@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.ProjectPreview {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  @include effect-focus-radius-20;
+  @include effect-hover-project-preview;
+
+  &__Image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    vertical-align: top;
+  }
+}
