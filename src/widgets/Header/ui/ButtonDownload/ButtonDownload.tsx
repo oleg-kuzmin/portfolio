@@ -7,7 +7,7 @@ interface ButtonDownloadProps {
 
 export function ButtonDownload({ className }: Readonly<ButtonDownloadProps>) {
   return (
-    <a className={cn(styles.ButtonDownload, className)} href="/pdf/Олег Кузьмин Frontend.pdf" download>
+    <a className={cn(styles.ButtonDownload, className)} href="/pdf/Олег-Кузьмин-Frontend.pdf" download>
       Резюме
     </a>
   );
