@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Олег Кузьмин Портфолио',
   description: 'Сайт Портфолио',
+  manifest: `portfolio/manifest.json`,
 };
 
 export default function RootLayout({
