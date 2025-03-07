@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://oleg-kuzmin.github.io/portfolio",
   "scripts": {
     "dev": "explorer http://localhost:3000/portfolio & next dev --turbopack",
     "build": "next build",
