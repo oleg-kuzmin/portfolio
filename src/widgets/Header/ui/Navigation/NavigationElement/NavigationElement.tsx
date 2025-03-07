@@ -10,7 +10,7 @@ interface NavigationElementProps {
 export function NavigationElement({ href, text, className }: Readonly<NavigationElementProps>) {
   return (
     <li className={cn(styles.NavigationElement, className)}>
-      <a className={styles.NavigationElement__Link} href={`/${href}`}>
+      <a className={styles.NavigationElement__Link} href={href}>
         {text}
       </a>
     </li>
