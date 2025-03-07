@@ -9,7 +9,7 @@ interface HeroImageProps {
 export function HeroImage({ className }: Readonly<HeroImageProps>) {
   return (
     <Image
-      className={cn(styles.HeroImage, className)}
+      className={cn(styles.HeroImage, 'animate-light-speed-in-left', className)}
       src="/portfolio/svg/image-hero.svg"
       alt="Молодой человек за компьютером"
       width={0}
