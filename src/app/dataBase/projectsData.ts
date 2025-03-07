@@ -2,8 +2,8 @@ import { ProjectsData } from '@/shared/lib/types';
 
 export const projectsData: ProjectsData = [
   {
-    title: 'Doors Locks (в разработке) Doors Locks (в разработке)',
-    image: '/images/8-door-locks-min.jpg',
+    title: 'Doors Locks (в разработке)',
+    image: '/portfolio/images/8-door-locks-min.jpg',
     hrefSite: 'https://door-locks-vite.vercel.app',
     hrefGit: 'https://github.com/oleg-kuzmin/door-locks-vite',
     description: 'E-commerce веб-приложение на React+Typescript (Vite) - магазин дверных замков.',
@@ -17,7 +17,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Food Delivery',
-    image: '/images/7-food-delivery-min.jpg',
+    image: '/portfolio/images/7-food-delivery-min.jpg',
     hrefSite: 'https://next-food-delivery-indol.vercel.app',
     hrefGit: 'https://github.com/oleg-kuzmin/next-food-delivery',
     description:
@@ -46,7 +46,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Colors',
-    image: '/images/6-colors-min.jpg',
+    image: '/portfolio/images/6-colors-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/colors',
     hrefGit: 'https://github.com/oleg-kuzmin/colors',
     description:
@@ -73,7 +73,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Frontend Cats',
-    image: '/images/5-frontend-cats-min.jpg',
+    image: '/portfolio/images/5-frontend-cats-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/frontend-challenge',
     hrefGit: 'https://github.com/oleg-kuzmin/frontend-challenge',
     description:
@@ -97,7 +97,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Mesto Project',
-    image: '/images/4-mesto-project-min.jpg',
+    image: '/portfolio/images/4-mesto-project-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/mesto-project',
     hrefGit: 'https://github.com/oleg-kuzmin/mesto-project',
     description:
@@ -125,7 +125,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Film Camera Repair',
-    image: '/images/3-film-camera-repair-min.jpg',
+    image: '/portfolio/images/3-film-camera-repair-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/film-camera-repair',
     hrefGit: 'https://github.com/oleg-kuzmin/film-camera-repair',
     description: 'Сайт-лэндинг по ремонту фотоаппаратов.',
@@ -140,7 +140,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'Russian Travel',
-    image: '/images/2-russian-travel-min.jpg',
+    image: '/portfolio/images/2-russian-travel-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/russian-travel',
     hrefGit: 'https://github.com/oleg-kuzmin/russian-travel',
     description: 'Сайт-лэндинг про путешествия.',
@@ -155,7 +155,7 @@ export const projectsData: ProjectsData = [
   },
   {
     title: 'How To Learn',
-    image: '/images/1-how-to-learn-min.jpg',
+    image: '/portfolio/images/1-how-to-learn-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/how-to-learn',
     hrefGit: 'https://github.com/oleg-kuzmin/how-to-learn',
     description: 'Учебный сайт-лэндинг от Яндекс.',

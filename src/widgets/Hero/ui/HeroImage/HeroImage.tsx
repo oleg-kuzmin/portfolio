@@ -10,7 +10,7 @@ export function HeroImage({ className }: Readonly<HeroImageProps>) {
   return (
     <Image
       className={cn(styles.HeroImage, className)}
-      src="/svg/image-hero.svg"
+      src="/portfolio/svg/image-hero.svg"
       alt="Молодой человек за компьютером"
       width={0}
       height={0}

@@ -10,7 +10,7 @@ export function AboutSelfImage({ className }: Readonly<AboutSelfImageProps>) {
   return (
     <Image
       className={cn(styles.AboutSelfImage, className)}
-      src="/svg/image-about.svg"
+      src="/portfolio/svg/image-about.svg"
       alt="Молодой человек рассказывает о себе"
       width={0}
       height={0}

@@ -13,15 +13,15 @@
   @include effect-hover-ui;
 
   &_Right {
-    background-image: url('/svg/ui-icon-arrow-white.svg');
+    background-image: url('/portfolio/svg/ui-icon-arrow-white.svg');
   }
 
   &_Left {
     rotate: 180deg;
-    background-image: url('/svg/ui-icon-arrow-white.svg');
+    background-image: url('/portfolio/svg/ui-icon-arrow-white.svg');
   }
 
   &_Close {
-    background-image: url('/svg/ui-icon-close-white.svg');
+    background-image: url('/portfolio/svg/ui-icon-close-white.svg');
   }
 }
