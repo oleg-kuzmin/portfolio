@@ -39,6 +39,7 @@ export function ProjectElement({ media, project, className }: Readonly<ProjectEl
         height={0}
         sizes="100%"
         style={{ width: '100%', height: 'auto' }}
+        priority={true}
       />
     ) : (
       <Image
@@ -47,6 +48,7 @@ export function ProjectElement({ media, project, className }: Readonly<ProjectEl
         alt={project.title}
         width={580}
         height={667}
+        priority={true}
       />
     );
 
