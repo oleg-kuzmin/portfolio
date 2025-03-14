@@ -2,20 +2,6 @@ import { ProjectsData } from '@/shared/lib/types';
 
 export const projectsData: ProjectsData = [
   {
-    title: 'Doors Locks (в разработке)',
-    image: '/portfolio/images/8-door-locks-min.jpg',
-    hrefSite: 'https://door-locks-vite.vercel.app',
-    hrefGit: 'https://github.com/oleg-kuzmin/door-locks-vite',
-    description: 'E-commerce веб-приложение на React+Typescript (Vite) - магазин дверных замков.',
-    functional: ['Слайдер с отображением пагинации и стрелок.', 'Автоматические переключение слайдов.', '...'],
-    technologies: [
-      'FSD-архитектура проекта.',
-      'Библиотеки swiper.js, react-transition-group.',
-      'Используется Typescript.',
-      '...',
-    ],
-  },
-  {
     title: 'Food Delivery',
     image: '/portfolio/images/7-food-delivery-min.jpg',
     hrefSite: 'https://next-food-delivery-indol.vercel.app',
@@ -42,6 +28,20 @@ export const projectsData: ProjectsData = [
       'Аккордеон на странице условий доставки на чистом CSS.',
       'Библиотека Swiper с настройками под разные устройства.',
       'Библиотека React Transition Group для анимации.',
+    ],
+  },
+  {
+    title: 'Doors Locks (в разработке)',
+    image: '/portfolio/images/8-door-locks-min.jpg',
+    hrefSite: 'https://door-locks-vite.vercel.app',
+    hrefGit: 'https://github.com/oleg-kuzmin/door-locks-vite',
+    description: 'E-commerce веб-приложение на React+Typescript (Vite) - магазин дверных замков.',
+    functional: ['Слайдер с отображением пагинации и стрелок.', 'Автоматические переключение слайдов.', '...'],
+    technologies: [
+      'FSD-архитектура проекта.',
+      'Библиотеки swiper.js, react-transition-group.',
+      'Используется Typescript.',
+      '...',
     ],
   },
   {
