@@ -31,8 +31,30 @@ export const projectsData: ProjectsData = [
     ],
   },
   {
+    title: 'Lead Conveer',
+    image: '/portfolio/images/8-leadconveer-min.jpg',
+    hrefSite: 'https://oleg-kuzmin.github.io/leadconveer',
+    hrefGit: 'https://github.com/oleg-kuzmin/leadconveer',
+    description: 'Сайт-лэндинг на React+Typescript (Next.js) - создание лидов для бизнеса.',
+    functional: [
+      'Слайдер с отображением кликабельной пагинации.',
+      'Модальное окно с навигацией в мобильной версии.',
+      'Воспроизведение видео-роликов.',
+      'Аккордеон с независимыми друг от друга панелями.',
+    ],
+    technologies: [
+      'Адаптивная верстка Perfect Pixel по макету Figma от 320px.',
+      'FSD-архитектура проекта.',
+      'Препроцессор Sass.',
+      'Модули scss для React.',
+      'React + Next.js.',
+      'Используется Typescript.',
+      'Библиотеки swiper.js, classnames.',
+    ],
+  },
+  {
     title: 'Doors Locks (в разработке)',
-    image: '/portfolio/images/8-door-locks-min.jpg',
+    image: '/portfolio/images/9-door-locks-min.jpg',
     hrefSite: 'https://door-locks-vite.vercel.app',
     hrefGit: 'https://github.com/oleg-kuzmin/door-locks-vite',
     description: 'E-commerce веб-приложение на React+Typescript (Vite) - магазин дверных замков.',
@@ -50,7 +72,7 @@ export const projectsData: ProjectsData = [
     hrefSite: 'https://oleg-kuzmin.github.io/colors',
     hrefGit: 'https://github.com/oleg-kuzmin/colors',
     description:
-      'E-commerce веб-приложение на JavaScript и Pug (Webpack) - магазин красок. Внешнее api (mock.api) для получения данных.',
+      'E-commerce веб-приложение на JavaScript и Pug (Webpack) - магазин красок. Внешнее api (mockapi.io) для получения данных.',
     functional: [
       'Слайдер с отображением пагинации и стрелок.',
       'Фильтрация по типам товаров.',

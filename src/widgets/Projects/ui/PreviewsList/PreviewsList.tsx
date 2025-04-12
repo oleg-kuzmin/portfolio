@@ -20,6 +20,7 @@ export function PreviewsList({ projectsData, onClickPreview, onClose, className 
         src={project.image}
         alt={project.title}
         onClick={onClickPreview}
+        title={project.description}
       />
     );
   });

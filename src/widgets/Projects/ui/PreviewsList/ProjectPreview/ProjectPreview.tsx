@@ -6,12 +6,13 @@ import styles from './ProjectPreview.module.scss';
 interface ProjectPreviewProps {
   src: string;
   alt: string;
+  title: string;
   index: number;
   onClick: HandleClickProjectPreview;
   className?: string;
 }
 
-export function ProjectPreview({ src, alt, index, onClick, className }: Readonly<ProjectPreviewProps>) {
+export function ProjectPreview({ src, alt, title, index, onClick, className }: Readonly<ProjectPreviewProps>) {
   const handleClick = () => {
     onClick(index);
   };
@@ -25,6 +26,7 @@ export function ProjectPreview({ src, alt, index, onClick, className }: Readonly
         width={200}
         height={230}
         priority={true}
+        title={title}
       />
     </button>
   );
