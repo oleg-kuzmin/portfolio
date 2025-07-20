@@ -31,6 +31,29 @@ export const projectsData: ProjectsData = [
     ],
   },
   {
+    title: 'Car Tracker',
+    image: '/portfolio/images/10-car-tracker-min.jpg',
+    hrefSite: 'https://oleg-kuzmin.github.io/car-tracker',
+    hrefGit: 'https://github.com/oleg-kuzmin/car-tracker',
+    description: 'SPA-приложение для desktop на React+Typescript (Vite) - трекинг автомобилей.',
+    functional: [
+      'Просмотр списка машин, полученных с сервера через REST API.',
+      'Удаление и редактирование машины.',
+      'Сортировка машин по году и цене.',
+      'Трекинг отдельной машины или всех машин на карте.',
+      'Обработка ошибок получения данных.',
+      'Валидация формы.',
+    ],
+    technologies: [
+      'FSD-архитектура проекта.',
+      'Используется Typescript.',
+      'Используются дополнительные библиотеки: react-query, react-router-dom, leaflet, react-hook-form, react-hot-toast, react-icons, classnames и другие.',
+      'Используются кастомные хуки.',
+      'Стилизация через sass-модули.',
+      'Дополнительно настроены плагины prettier для сортировки импортов и стилей.',
+    ],
+  },
+  {
     title: 'Lead Conveer',
     image: '/portfolio/images/8-leadconveer-min.jpg',
     hrefSite: 'https://oleg-kuzmin.github.io/leadconveer',
@@ -58,7 +81,11 @@ export const projectsData: ProjectsData = [
     hrefSite: 'https://door-locks-vite.vercel.app',
     hrefGit: 'https://github.com/oleg-kuzmin/door-locks-vite',
     description: 'E-commerce веб-приложение на React+Typescript (Vite) - магазин дверных замков.',
-    functional: ['Слайдер с отображением пагинации и стрелок.', 'Автоматические переключение слайдов.', '...'],
+    functional: [
+      'Слайдер с отображением пагинации и стрелок.',
+      'Автоматические переключение слайдов.',
+      '...',
+    ],
     technologies: [
       'FSD-архитектура проекта.',
       'Библиотеки swiper.js, react-transition-group.',
