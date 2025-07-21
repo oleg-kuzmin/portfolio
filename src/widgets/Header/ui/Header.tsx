@@ -5,7 +5,6 @@ import cn from 'classnames';
 import { Logo } from '@/shared/ui';
 import { BurgerPanel } from './BurgerPanel';
 import { ButtonBurger } from './ButtonBurger';
-import { ButtonDownload } from './ButtonDownload';
 import { Navigation } from './Navigation';
 import styles from './Header.module.scss';
 
@@ -35,7 +34,7 @@ export function Header({ className }: Readonly<HeaderProps>) {
           onClick={handleToggleBurgerPanel}
         />
         <Navigation className={styles.Header__Navigation} />
-        <ButtonDownload className={styles.Header__ButtonDownload} />
+        {/* <ButtonDownload className={styles.Header__ButtonDownload} /> */}
       </div>
     </header>
   );
