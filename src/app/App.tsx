@@ -13,7 +13,6 @@ export function App() {
       <Header />
       <Hero text={heroText} />
       <Skills skillsData={skillsData} />
-      {/* <Experience expData={expData} /> */}
       <AboutSelf aboutData={aboutData} />
       <Projects projectsData={projectsData} />
       <Footer />
